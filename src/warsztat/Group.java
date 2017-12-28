@@ -33,7 +33,7 @@ public class Group {
 	}
 	
 	public int getId() {
-		return id;
+		return id; 
 	}
 	
 	private Group setId(int id) {
