@@ -109,7 +109,7 @@ public class Solution {
 				Solution tmpSolution = new Solution();
 				tmpSolution.setCreated(res.getString("created"));
 				tmpSolution.setUpdate(res.getString("updated"));
-				tmpSolution.setDescription(res.getString("description"));
+				tmpSolution.setDescription(res.getString("description")); 
 				tmpSolution.setExcercise_id(res.getInt("excercise_id"));
 				tmpSolution.setUsers_id(res.getInt("users_id"));
 				tmpSolution.setId(res.getInt("id"));
