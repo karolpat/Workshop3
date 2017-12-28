@@ -21,7 +21,7 @@ public class DbUtil {
 		
 		return DriverManager.getConnection(DB_URL, DB_USRNM, DB_PSSWRD); 
 	}
-		
+		 
 	
 
 }
