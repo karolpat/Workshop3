@@ -9,7 +9,7 @@
 </head>
 <body>
 
-<jsp:include page="/header.jsp"></jsp:include>
+<jsp:include page="/header.jsp"></jsp:include> 
 
 	<h3>List of the newest five solutions</h3>
 
