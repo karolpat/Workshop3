@@ -132,16 +132,16 @@ public class Solution {
 		
 		while(res.next()){
 			
-			Solution tmpSolut = new Solution();
+			Solution tmpSolution = new Solution();
 			
-			tmpSolut.setCreated(res.getString("created"));
-			tmpSolut.setUpdate(res.getString("updated"));
-			tmpSolut.setDescription(res.getString("description"));
-			tmpSolut.setExcercise_id(res.getInt("excercise_id"));
-			tmpSolut.setUsers_id(res.getInt("users_id"));
-			tmpSolut.setId(res.getInt("id"));
+			tmpSolution.setCreated(res.getString("created"));
+			tmpSolution.setUpdate(res.getString("updated"));
+			tmpSolution.setDescription(res.getString("description")); 
+			tmpSolution.setExcercise_id(res.getInt("excercise_id"));
+			tmpSolution.setUsers_id(res.getInt("users_id"));
+			tmpSolution.setId(res.getInt("id"));
 			
-			solutsList.add(tmpSolut);
+			solutsList.add(tmpSolution);
 			
 		}
 		Solution[] solutsByUser = new Solution [solutsList.size()];
