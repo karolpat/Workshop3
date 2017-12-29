@@ -9,8 +9,8 @@
 <body>
 
 <nav>
-<a href="/homepage">Homepage</a>
-<a href="/groupPage">User groups</a>
+<a href="/warsztat/homepage">Homepage</a>
+<a href="/warsztat/groupPage">User groups</a>
 <!-- <a href="/" -->
 </nav>
 
