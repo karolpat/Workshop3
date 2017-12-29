@@ -17,7 +17,7 @@ public class GroupPage extends HttpServlet {
 	
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 
-		
+		getServletContext().getRequestDispatcher("/group.jsp").forward(request, response);		
 	}
 
 	
