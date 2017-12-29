@@ -15,6 +15,10 @@ table, th, td {
 tr:nth-child(even) {
 	background-color: #dddddd;
 }
+nav a {
+	margin: 10px;
+	text-decoration: none;
+}
 </style>
 <body>
 
