@@ -23,18 +23,26 @@ public class Homepage extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+		String seeAll = request.getParameter("all");
 		
 		try(Connection conn = DbUtil.getConnection()) {
 			
 		List<Solution> solutsList = new ArrayList<>(Arrays.asList(Solution.loadAll(conn)));
 		List<Solution> shortList = solutsList.subList(Math.max(solutsList.size() - 5, 0), solutsList.size());
 		
-		request.setAttribute("list", shortList);
+		if(seeAll!=null) {
+			request.setAttribute("fullList", solutsList);
+			getServletContext().getRequestDispatcher("/fullList.jsp").forward(request, response);
+		}else {
+			request.setAttribute("list", shortList);	
+			getServletContext().getRequestDispatcher("/home.jsp").forward(request, response);
+		}
+		
 		
 		}catch(SQLException e) {
 			e.printStackTrace();
 		}
-		getServletContext().getRequestDispatcher("/home.jsp").forward(request, response);		
+				
 	}
 
 
