@@ -18,6 +18,7 @@
 			<th>ID</th>
 			<th>Username</th>
 			<th>Email</th>
+			<th>Link to user</th>
 		</thead>
 		<tbody>
 
@@ -27,6 +28,7 @@
 					<td>${aUser.id }</td>
 					<td>${aUser.username }</td>
 					<td>${aUser.email }</td>
+					<td><a href="/warsztat/usersPage?id=${aUser.id }">Go to this user</a></td>
 				</tr>
 			</c:forEach>
 
