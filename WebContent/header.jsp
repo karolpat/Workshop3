@@ -6,6 +6,16 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Insert title here</title>
 </head>
+<style>
+table, th, td {
+	border: 2px solid black;
+	border-collapse: collapse;
+	padding: 10px;
+}
+tr:nth-child(even) {
+	background-color: #dddddd;
+}
+</style>
 <body>
 
 <nav>
