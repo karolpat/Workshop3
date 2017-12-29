@@ -27,8 +27,8 @@
 				<tr>
 					<td>${solution.created}</td>
 					<td>${solution.update}</td>
-					<td>${solution.excercise_id }</td>
-					<td>${solution.users_id }</td>
+					<td align="center">${solution.excercise_id }</td>
+					<td align="center">${solution.users_id }</td>
 					<td><a href="/warsztat/details?id=${solution.id }">Show details</a></td>
 				</tr>
 			</c:forEach>
