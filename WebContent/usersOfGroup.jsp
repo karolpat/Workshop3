@@ -10,29 +10,31 @@
 <body>
 
 	<jsp:include page="/header.jsp"></jsp:include>
-	
-<h3>List of all user groups</h3>
+
+<h3>List of users of group no. ${param.id }</h3>
 
 	<table>
 		<thead>
 			<th>ID</th>
-			<th>Name</th>
-			<th>See users</th>
+			<th>Username</th>
+			<th>Email</th>
 		</thead>
 		<tbody>
 
-			<c:forEach var="group" items="${list }">
+			<c:forEach var="aUser" items="${list }">
 
 				<tr>
-					<td>${group.id }</td>
-					<td>${group.name }</td>
-					<td><a href="/warsztat/usersOfGroup?id=${group.id }">Show me</a></td>
+					<td>${aUser.id }</td>
+					<td>${aUser.username }</td>
+					<td>${aUser.email }</td>
 				</tr>
 			</c:forEach>
 
 		</tbody>
 
 	</table>
+
+
 
 </body>
 </html>
