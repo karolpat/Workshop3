@@ -160,7 +160,7 @@ public class Solution {
 			while(res.next()){
 				
 				loaded.setCreated(res.getString("created"));
-				loaded.setUpdate(res.getString("cupdate"));
+				loaded.setUpdate(res.getString("updated"));
 				loaded.setDescription(res.getString("description"));
 				loaded.setExcercise_id(res.getInt("excercise_id"));
 				loaded.setUsers_id(res.getInt("users_id"));
