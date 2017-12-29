@@ -31,6 +31,8 @@ public class UsersOfGroup extends HttpServlet {
 			List<Users>	usersList = new ArrayList<>(Arrays.asList(Users.loadByGroupId(conn, getGroupId)));
 			request.setAttribute("list", usersList);
 			
+//			List<Solution> solutsList
+			
 		}catch(SQLException e) {
 			e.getMessage();
 		}
