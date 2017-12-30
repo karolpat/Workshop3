@@ -29,14 +29,12 @@ public class Solution {
 		setUsers_id(users_id);
 	}
 
-	public Solution(String created, String update, String description, int excercise_id, int users_id,
+	public Solution(String created, String update, int excercise_id,
 			String username) {
 
 		setCreated(created);
 		setUpdate(update);
-		setDescription(description);
 		setExcercise_id(excercise_id);
-		setUsers_id(users_id);
 		setUsername(username);
 
 	}
