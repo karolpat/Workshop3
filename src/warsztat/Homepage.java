@@ -27,8 +27,17 @@ public class Homepage extends HttpServlet {
 		
 		try(Connection conn = DbUtil.getConnection()) {
 			
-		List<Solution> solutsList = new ArrayList<>(Arrays.asList(Solution.loadAll(conn)));
+		List<Solution> solutsList = new ArrayList<>(Arrays.asList(Solution.loadWithUsername(conn)));
 		List<Solution> shortList = solutsList.subList(Math.max(solutsList.size() - 5, 0), solutsList.size());
+//		List<Users> userList = new ArrayList<>();
+		
+//		for(Solution s : solutsList) {
+//			int usrId = s.getUsers_id();
+//			Users user = Users.loadById(conn, usrId);
+//			userList.add(user);
+//		}
+		
+//		request.setAttribute("usersList", userList);
 		
 		if(seeAll!=null) {
 			request.setAttribute("fullList", solutsList);
