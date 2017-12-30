@@ -18,7 +18,7 @@
 			<th>Created</th>
 			<th>Updated</th>
 			<th>Excercise id</th>
-			<th>User id</th>
+			<th>Author</th>
 			<th>Details</th>
 		</thead>
 		<tbody>
